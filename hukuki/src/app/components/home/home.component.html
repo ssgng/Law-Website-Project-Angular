@@ -440,20 +440,20 @@
 					<div class="section-title-left"> <span class="section-top">//  Free Quote</span>
 						<h2 class="mb-60">Get a free Consultation</h2>
 						<div class="from-area">
-							<form>
+							<form #loginForm="ngForm" (submit)="getValues(loginForm.value)">
 								<div class="form-row">
 									<div class="form-group col-md-6">
-										<input type="text" class="form-control" id="fullName" placeholder="Name">
+										<input type="text" ngModel class="form-control" id="fullName"name="name" placeholder="Name">
 									</div>
 									<div class="form-group col-md-6">
-										<input type="email" class="form-control" id="email" placeholder="Email">
+										<input type="email"  ngModel class="form-control" id="email" name="email" placeholder="Email">
 									</div>
 								</div>
 								<div class="form-group">
-									<input type="text" class="form-control" id="subject" placeholder="Subject">
+									<input type="text" ngModel class="form-control" id="subject" name="subject" placeholder="Subject">
 								</div>
 								<div class="form-group">
-									<textarea class="form-control" id="message" rows="2" placeholder="Message"></textarea>
+									<textarea class="form-control" id="message" rows="2" name="message" placeholder="Message"></textarea>
 								</div>
 								<button type="submit" class="attoyer-btn">Send Massage</button>
 							</form>

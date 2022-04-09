@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
+import { NgForm } from '@angular/forms';
+
 
 @Component({
   selector: 'app-home',
@@ -19,7 +21,11 @@ export class HomeComponent implements OnInit {
   
   ]
   
-
+  getValues(c:any ) {
+   console.log("function running!!")
+    
+   // console.log(c.Subject)
+  }
   customOptions: OwlOptions = {
     autoHeight: true,
  
