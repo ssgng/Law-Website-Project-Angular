@@ -1564,4 +1564,33 @@ Blog Sidebar CSS
 .image-size {
 	height:250px;
 }
- 
+.card-row-size {
+ margin-bottom: 40px;
+}
+
+.card-footer:last-child {
+    border-radius: 0!important;
+}
+
+.card-footer {
+    padding: 0!important;
+    background-color: unset!important;
+    border-top: unset!important;
+}
+
+.text-center {
+    color: #fff;
+}
+
+.card-img-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;   
+}
+
+.card-text-style {
+	font-weight:bold;
+	color: white;
+	 
+}
