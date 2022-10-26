@@ -7,12 +7,14 @@ import { HomeComponent } from './components/home/home.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ContactComponent } from './contact/contact.component';
  
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent 
+    HomeComponent,
+    ContactComponent 
   ],
   imports: [
     BrowserModule,
