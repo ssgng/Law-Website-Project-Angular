@@ -204,6 +204,24 @@ Main Menu
 Banner CSS
 ==========================================================================*/
 
+.bannersami{
+	position: relative;
+	
+}
+.bannertextsami{
+	color: white;
+	position: absolute;
+	top: 45%;
+	margin-left: 500px;
+	font-size: 2em;
+}
+.faaliyetsami{
+	position: absolute;
+	top: 55%;
+	margin-left: 750px;
+}
+
+
 .single-slider {
 	background-image: url('./../../../assets/img/banner-1.png');
 	position: relative;
@@ -217,7 +235,7 @@ Banner CSS
 	text-align: left;
 }
 .bg-img {
-	background-image: url('./../../../assets/img/banner-2.png');
+	background-image: url('./../../../assets/img/main-slider3.jpeg');
 }
 .single-slider::after {
 	position: absolute;
@@ -1594,6 +1612,5 @@ Blog Sidebar CSS
 	color: white;
 
 }
-.scroll{
-  scroll-behavior: smooth;
-}
+
+
