@@ -520,22 +520,22 @@
 					<div class="section-title-left"> <a name="Ulasin"><span class="section-top">Bize Ulaşın</span></a>
 						<h2 class="mb-60">Ücretsiz Danışmanlık </h2>
 						<div class="from-area">
-							<form #loginForm="ngForm" (submit)="getValues(loginForm.value)">
+							<form  method="POST" target="_blank">
 								<div class="form-row">
 									<div class="form-group col-md-6">
-										<input type="text" ngModel class="form-control" id="fullName"name="name" placeholder="İsim">
+										<input type="text"   class="form-control" id="fullName" name="name" placeholder="İsim" required>
 									</div>
 									<div class="form-group col-md-6">
-										<input type="email"  ngModel class="form-control" id="email" name="email" placeholder="Email">
+										<input type="email"    class="form-control" id="email" name="email" placeholder="Email" required>
 									</div>
 								</div>
 								<div class="form-group">
-									<input type="text" ngModel class="form-control" id="subject" name="subject" placeholder="Konu">
+									<input type="text"   class="form-control" id="subject" name="subject" placeholder="Konu" required>
 								</div>
 								<div class="form-group">
-									<textarea class="form-control" id="message" rows="2" name="message" placeholder="Mesaj"></textarea>
+									<textarea class="form-control" id="message" rows="2" name="message" placeholder="Mesaj" required></textarea>
 								</div>
-								<button type="submit" class="attoyer-btn">Mesajı Gönder</button>
+								<button type="submit" class="attoyer-btn" href="#popup1">Mesajı Gönder</button>
 							</form>
 						</div>
 					</div>
@@ -544,7 +544,15 @@
 		</div>
 	</div>
 	<!-- Contact Area End -->
-
+	<div id="popup1" class="overlay">
+		<div class="popup">
+			<h2>Here i am</h2>
+			<a class="close" href="#">&times;</a>
+			<div class="content">
+				Thank to pop me out of that button, but now i'm done so you can close this window.
+			</div>
+		</div>
+	</div>
 
 
 

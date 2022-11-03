@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { OwlOptions } from 'ngx-owl-carousel-o';
+ 
 import { NgForm } from '@angular/forms';
 
 
@@ -21,31 +21,31 @@ export class HomeComponent implements OnInit {
   
   ]
   
-  getValues(c:any ) {
+  getValues( ) {
    console.log("function running!!")
     
    // console.log(c.Subject)
   }
-  customOptions: OwlOptions = {
-    autoHeight: true,
+  // customOptions: OwlOptions = {
+  //   autoHeight: true,
  
-    loop: true,
-    mouseDrag: true,
-    touchDrag: true,
-    pullDrag: true,
-    dots: true,
-    navSpeed: 700,
-    navText: [ '<i class="fa-chevron-left"></i>', '<i class="fa-chevron-right></i>"' ],
-    autoplay:true,
+  //   loop: true,
+  //   mouseDrag: true,
+  //   touchDrag: true,
+  //   pullDrag: true,
+  //   dots: true,
+  //   navSpeed: 700,
+  //   navText: [ '<i class="fa-chevron-left"></i>', '<i class="fa-chevron-right></i>"' ],
+  //   autoplay:true,
      
-    responsive: {
-      0: {
-        items: 1
-      } 
-    },
-    nav: true,
+  //   responsive: {
+  //     0: {
+  //       items: 1
+  //     } 
+  //   },
+  //   nav: true,
     
-  }
+  // }
 
 
 }
