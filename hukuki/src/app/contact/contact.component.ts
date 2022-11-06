@@ -13,5 +13,13 @@ export class ContactComponent implements OnInit {
   }
   //url="https://formspree.io/f/myyvbvaj"
   url="https://formsubmit.co/ebe1ba3593076a7ca4327043f7b54ad4"
+  fullname = '';
+  email = '';
+  subject = '';
+  message = '';
+  clickable = false
 
+  clicked() {
+    console.log("clicked@!!!!! ")
+  }
 }

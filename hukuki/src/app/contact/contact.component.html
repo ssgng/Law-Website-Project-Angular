@@ -115,23 +115,25 @@
                     <div class="section-title-left"> <span class="section-top">Bize Ulaşın</span>
                         <h2 class="fff mb-60">Ücretsiz Danışmanlık</h2>
                         <div class="from-area">
-                            <form ngNoForm [action]="url" method="POST" target="_blank" name="_captcha">
+                            <form ngNoForm [action]="url" method="POST" target="_blank" >
+								<input type="hidden" name="_captcha" value="false">
+								<input type="hidden" name="_next" value="http://localhost:4200/contact">
 									<div class="form-row">
 										<div class="form-group col-md-6">
-											<input name="isim" type="text" class="form-control" id="fullName" placeholder="İsim" required >
+											<input name="isim" type="text" class="form-control" id="fullName" placeholder="İsim" required oninvalid="this.setCustomValidity('Lutfen Adinizi giriniz')" >
 										</div>
 										<div class="form-group col-md-6">
-											<input name="email" type="text" class="form-control" id="email" placeholder="Email" required >
+											<input name="email" type="text" class="form-control" id="email" placeholder="Email" required oninvalid="this.setCustomValidity('Gecerli bir Email formati giriniz')">
 										</div>
 									</div>
 									<div class="form-group">
-										<input type="text" name="konu" class="form-control" id="subject" placeholder="Konu" required>
+										<input type="text" name="konu" class="form-control" id="subject" placeholder="Konu" required oninvalid="this.setCustomValidity('Lutfen konu giriniz')" >
 									</div>
 									<div class="form-group">
-										<textarea class="form-control" name="mesaj" id="message" rows="2" placeholder="Mesaj" required></textarea>
+										<textarea class="form-control" name="mesaj" id="message" rows="2" placeholder="Mesaj" required oninvalid="this.setCustomValidity('Lutfen mesajinizi yaziniz')"></textarea>
 									</div>
 								 
-                                	<button type="submit" class="attoyer-btn" >Mesajı Gönder</button>
+                                	<button type="submit" class="attoyer-btn">Mesajı Gönder</button>
                             </form>
                         </div>
                     </div>
