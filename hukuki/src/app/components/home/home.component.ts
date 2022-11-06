@@ -14,38 +14,15 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  slidesStore = [
-    { "src": "../../../assets/img/banner-1.png", "title": "this is title","id":"1" },
-    { "src": "../../../assets/img/banner-2.png", "title": "this is titles4" ,"id":"2" },
-    { "src": "../../../assets/img/banner-1.png","title":"this is title3","id":"3"  }
-  
-  ]
-  
-  getValues( ) {
-   console.log("function running!!")
-    
-   // console.log(c.Subject)
-  }
-  // customOptions: OwlOptions = {
-  //   autoHeight: true,
  
-  //   loop: true,
-  //   mouseDrag: true,
-  //   touchDrag: true,
-  //   pullDrag: true,
-  //   dots: true,
-  //   navSpeed: 700,
-  //   navText: [ '<i class="fa-chevron-left"></i>', '<i class="fa-chevron-right></i>"' ],
-  //   autoplay:true,
-     
-  //   responsive: {
-  //     0: {
-  //       items: 1
-  //     } 
-  //   },
-  //   nav: true,
-    
-  // }
+  
+   
+  url="https://formsubmit.co/a2483b4f71588396f07b7f7d6d3172a2"
+  fullname = '';
+  email = '';
+  subject = '';
+  message = '';
+  clickable = false
 
 
 }
