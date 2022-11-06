@@ -115,22 +115,23 @@
                     <div class="section-title-left"> <span class="section-top">Bize Ulaşın</span>
                         <h2 class="fff mb-60">Ücretsiz Danışmanlık</h2>
                         <div class="from-area">
-                            <form>
-                                <div class="form-row">
-                                    <div class="form-group col-md-6">
-                                        <input type="text" class="form-control" id="fullName" placeholder="İsim">
-                                    </div>
-                                    <div class="form-group col-md-6">
-                                        <input type="email" class="form-control" id="email" placeholder="Email">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="subject" placeholder="Konu">
-                                </div>
-                                <div class="form-group">
-                                    <textarea class="form-control" id="message" rows="2" placeholder="Mesaj"></textarea>
-                                </div>
-                                <button type="submit" class="attoyer-btn">Mesajı Gönder</button>
+                            <form ngNoForm [action]="url" method="POST" target="_blank" name="_captcha">
+									<div class="form-row">
+										<div class="form-group col-md-6">
+											<input name="isim" type="text" class="form-control" id="fullName" placeholder="İsim" required >
+										</div>
+										<div class="form-group col-md-6">
+											<input name="email" type="text" class="form-control" id="email" placeholder="Email" required >
+										</div>
+									</div>
+									<div class="form-group">
+										<input type="text" name="konu" class="form-control" id="subject" placeholder="Konu" required>
+									</div>
+									<div class="form-group">
+										<textarea class="form-control" name="mesaj" id="message" rows="2" placeholder="Mesaj" required></textarea>
+									</div>
+								 
+                                	<button type="submit" class="attoyer-btn" >Mesajı Gönder</button>
                             </form>
                         </div>
                     </div>

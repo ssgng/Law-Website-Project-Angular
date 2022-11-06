@@ -11,5 +11,7 @@ export class ContactComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  //url="https://formspree.io/f/myyvbvaj"
+  url="https://formsubmit.co/ebe1ba3593076a7ca4327043f7b54ad4"
 
 }
