@@ -10,6 +10,17 @@ Top Bar
 .top-right li a {
 	color: #fff;
 }
+
+/* Top Bar Mobile Start*/
+@media screen and (max-width:700px){
+	.top-bar {
+		width: auto;
+		height: auto;
+		font-size: 60%;
+	}
+}
+/* Top Bar Mobile End*/
+
 /* ==========================================================================
 Main Menu
 ========================================================================== */
@@ -200,27 +211,70 @@ Main Menu
 	opacity: 1;
 	margin-right: 4px;
 }
+/*Navbar Mobile Start*/
+@media screen and (max-width:700px) {
+	.menu-logo{
+		padding-left: 20%;
+	}
+
+}
+/*Navbar Mobile End*/
+
 /*==========================================================================
 Banner CSS
 ==========================================================================*/
 
 .bannersami{
 	position: relative;
-	
 }
 .bannertextsami{
 	color: white;
 	position: absolute;
 	top: 45%;
-	margin-left: 500px;
 	font-size: 2em;
+	margin-left: 28%;
 }
 .faaliyetsami{
 	position: absolute;
 	top: 55%;
-	margin-left: 750px;
+	margin-left: 42%;
 }
 
+
+/* banner mobile  start*/
+@media screen and (max-width: 700px){
+	
+	
+	.bannersami{
+		position: relative;
+	}
+	.bannertextsami{
+		width: 300px;
+		color: white;
+		position: absolute;
+		font-size: 0.7em;
+		margin-left: 18%;
+		
+	}
+	.faaliyetsami{
+		position: absolute;
+		margin-left: 35%;
+		margin-top: 8px;
+	}
+	.attoyer-btn{
+		height: 20%;
+		width: 60%;
+		padding-left: 0;
+		padding-right: 0;
+		line-height: 2;
+	}
+	.pb-35{
+		padding-bottom: 0;
+	}
+	
+}
+	
+/* banner mobile  end*/
 
 .single-slider {
 	background-image: url('./../../../assets/img/banner-1.png');
@@ -323,6 +377,14 @@ About CSS
 .about-signa img {
 	width: 120px;
 }
+@media screen and (max-width:700px) {
+	.about-area{
+		padding-top: 10%;
+
+	}
+	
+	
+}
 /*==========================================================================
 Services CSS
 ==========================================================================*/
@@ -387,6 +449,21 @@ Services CSS
 }
 .services-group .owl-dot.active span {
 	background: #e9b950;
+}
+@media screen and (max-width:700px) {
+	
+	.services-area{
+		padding-top: 15%;
+		padding-left: 2%;
+		padding-bottom: 2%;
+	}
+	.card-padding{
+		padding-bottom: 5%;
+	}
+	.card-img-overlay{
+		padding: 0;
+		
+	}
 }
 /*==========================================================================
 Counter CSS
@@ -597,6 +674,7 @@ Solution CSS
 }
 .solution-right {
 	text-align: right;
+
 }
 .solution-icon i {
 	background: #fff;
@@ -612,6 +690,7 @@ Solution CSS
 	position: relative;
 	display: inline-flex;
 	align-items: center;
+	padding-left: 0px;
 }
 .solution-number p {
 	color: #fff;
@@ -619,6 +698,45 @@ Solution CSS
 	font-weight: 500;
 	margin-left: 20px;
 }
+
+/* Solution Area Mobile Start*/
+@media screen and (max-width:700px) {
+	.solution-area {
+		background-image: url('./../../../assets/img/solution.png');
+		position: relative;
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-color: #111c31;
+		z-index: 1;
+		margin-top: 2%;
+	}
+	.solution-icon i {
+		background: #fff;
+		width: 60px;
+		height: 60px;
+		text-align: center;
+		line-height: 70px;
+		font-size: 25px;
+		border-radius: 50%;
+		display: block;
+	}
+	.section-title-left h2{
+		font-size: 25px;
+	}
+	.solution-number p {
+		color: #fff;
+		font-size: 18px;
+		font-weight: 500;
+		margin-left: 20px;
+	}
+	.solution-right{
+		text-align: left;
+	}
+	
+
+}
+/* Solution Area Mobile End*/
 /*==========================================================================
 Testimonial CSS
 ==========================================================================*/
@@ -1612,5 +1730,11 @@ Blog Sidebar CSS
 	color: white;
 
 }
-
+@media  screen  and (max-width:700px){
+	.card-row-size {
+		margin-bottom: 40px;
+		
+	   }
+	
+}
 
