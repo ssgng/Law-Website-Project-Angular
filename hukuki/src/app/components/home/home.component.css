@@ -2,14 +2,6 @@
 Top Bar
 ========================================================================== */
 
-.top-bar {
-	background: #e9b950;
-	padding: 10px 0;
-}
-.top-left li a,
-.top-right li a {
-	color: #fff;
-}
 
 /* Top Bar Mobile Start*/
 @media screen and (max-width:700px){

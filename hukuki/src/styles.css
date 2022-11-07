@@ -6,8 +6,23 @@ html{
 }
 
 ::-webkit-scrollbar {
-	display: none;
-  }
-  
-  /* Hide scrollbar for IE, Edge and Firefox */
+display: none;
+}
+
+.top-bar {
+  background: #e9b950;
+  padding: 10px 0;
+}
+.top-left li a,
+.top-right li a {
+  color: #fff;
+}
+
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+body {
+  top: 0px !important;
+}
+    /* Hide scrollbar for IE, Edge and Firefox */
   
