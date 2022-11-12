@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Title, Meta } from '@angular/platform-browser';  
+import { Meta, Title } from '@angular/platform-browser';
+ 
 
 @Component({
   selector: 'app-root',
@@ -7,17 +8,12 @@ import { Title, Meta } from '@angular/platform-browser';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit{
-  title = 'hukuki';
-  constructor(private titleService: Title, private metaTagService: Meta) { }
+ 
+  constructor(private title:Title,private meta:Meta) { }
   
   ngOnInit(): void {
-    this.titleService.setTitle("Safa Hukuk");  
+    this.title.setTitle("Safa Hukuk")
+     this.meta.updateTag({name:"Safa Hukuk" , content:"Safa Hukuk Kocaeli"})
     
-    this.metaTagService.addTags([
-      { name: 'keywords', content: 'Safa Hukuk' },  
-      { name: 'Safa Hukuk', content: 'index, follow' }, 
-      { charset: 'UTF-8' }  
-    ]);  
-
   }
 }
